@@ -1,9 +1,9 @@
 :root {
     --red: #FA1A0F;
     --dark-red: #B02921;
-    --blue: #004079;
-    --light-blue: #145592;
     --very-light-blue: #eff3ff;
+    --blue: #004079;
+    --dark-blue: #001a31;
     --yellow: #EBFA28;
 }
 
@@ -71,7 +71,7 @@ nav ul li a {
 
 a.active, a:hover {
     transition: 0.5s;
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
     color: var(--very-light-blue);
 }
 
@@ -93,6 +93,7 @@ a.active, a:hover {
     padding: 2rem 0 2rem;
     max-width: 1200px;
     margin: auto;
+    background-color: var(--very-light-blue);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 30%));
     grid-auto-rows: 1fr;
@@ -139,41 +140,38 @@ a.active, a:hover {
 
 footer {
     padding: 0.4rem;
-    height: 6rem;
+    min-height: 6rem;
+    font-size: 1.6rem;
     background: var(--blue);
     display: flex;
-    justify-items: center;
-    font-size: 1.6rem;
-    position: sticky;
-    top: 0;
-}
-
-footer div {
-    display: flex;
-}
-
-footer div ul {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
-footer ul li {
-    list-style-type: none;
-}
-
-footer ul li a {
-    text-decoration: none;
+.footer-menu-container {
     color: var(--very-light-blue);
-    font-weight: 400;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-menu-container a {
+    color: var(--very-light-blue);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-menu-item {
+    margin: 1rem 3.5rem;
+    opacity: 0.9;
 }
 
 footer ul li a:hover {
     transition: 0.5s;
-    color: var(--dark-red);
+    color: var(--very-light-blue);
 }
 
 @media (max-width: 952px) {
@@ -191,11 +189,12 @@ footer ul li a:hover {
         display: block;
         z-index: 1;
     }
-    ul {
+    nav ul {
         position: fixed;
+        margin-top: 5rem;
         width: 100%;
         height: 100vh;
-        background: var(--light-blue);
+        background: var(--dark-blue);
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -210,7 +209,8 @@ footer ul li a:hover {
     }
     a:hover, a.active {
         background: none;
-        color: var(--blue);
+        color: var(--red);
+        text-transform: uppercase;
     }
     #check:checked ~ ul {
         left: 0;
