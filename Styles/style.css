@@ -1,0 +1,218 @@
+:root {
+    --red: #FA1A0F;
+    --dark-red: #B02921;
+    --blue: #004079;
+    --light-blue: #145592;
+    --very-light-blue: #eff3ff;
+    --yellow: #EBFA28;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+nav {
+    height: 5rem;
+    background: var(--blue);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+label.logo {
+    font-size: 4rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+label.logo a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--red);
+}
+
+nav ul {
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 5rem;
+    margin: 0 .3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--very-light-blue);
+    font-weight: 600;
+    padding: 0.2rem 0.8rem;
+    border-radius: 3px;
+}
+
+a.active, a:hover {
+    transition: 0.5s;
+    background-color: var(--light-blue);
+    color: var(--very-light-blue);
+}
+
+.checkbtn {
+    font-size: 3rem;
+    color: var(--very-light-blue);
+    float: right;
+    line-height: 5.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.cards-container {
+    padding: 2rem 0 2rem;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 30%));
+    grid-auto-rows: 1fr;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cards-container p {
+    font-size: 1.4rem;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 4px 0px black;
+}
+
+.card img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    transition: all 300ms;
+}
+
+.card-price {
+    height: 4rem;
+    padding: 0.6rem;
+    background-color: #004079;
+}
+
+.card-price p {
+    color: var(--very-light-blue);
+    line-height: 3rem;
+}
+
+.card-p {
+    padding: 0.6rem;
+}
+
+footer {
+    padding: 0.4rem;
+    height: 6rem;
+    background: var(--blue);
+    display: flex;
+    justify-items: center;
+    font-size: 1.6rem;
+    position: sticky;
+    top: 0;
+}
+
+footer div {
+    display: flex;
+}
+
+footer div ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--very-light-blue);
+    font-weight: 400;
+}
+
+footer ul li a:hover {
+    transition: 0.5s;
+    color: var(--dark-red);
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 3rem;
+        padding-left: 5rem;
+    }
+    nav ul li a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        z-index: 1;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--light-blue);
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 5rem 0;
+        line-height: 3rem;
+    }
+    nav ul li a {
+        font-size: 2rem;
+    }
+    a:hover, a.active {
+        background: none;
+        color: var(--blue);
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
