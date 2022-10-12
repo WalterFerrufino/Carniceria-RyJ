@@ -256,3 +256,70 @@ footer ul li a:hover {
         margin-top: 0rem;
     }
 }
+
+@keyframes banner-1{
+    0%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+    }
+    25%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+    }
+    
+    26%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
+    }
+    50%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
+    }
+    
+    51%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
+    }
+    100%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
+    }
+
+}@keyframes banner-2{
+    0%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+    }
+    25%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+    }
+    
+    26%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
+    }
+    50%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
+    }
+    
+    51%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
+    }
+    100%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
+    }
+
+}@keyframes banner-1{
+    0%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+    }
+    25%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+    }
+    
+    26%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
+    }
+    50%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
+    }
+    
+    51%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
+    }
+    100%{
+        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
+    }
+}
