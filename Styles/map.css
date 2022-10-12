@@ -38,8 +38,16 @@ iframe {
 }
 
 @media (max-width: 768px) {
+    h2 {
+        display: none;
+    }
     .map-container {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-top: calc((100vh - 603px)/2);
+    }
+    main div iframe {
+        margin: 0;
     }
 }
