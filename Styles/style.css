@@ -257,69 +257,126 @@ footer ul li a:hover {
     }
 }
 
-@keyframes banner-1{
-    0%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+/* Banner */
+.banner-1 {
+    width: 100%;
+    height: 250px;
+    animation: banner-1 12s infinite linear;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+@keyframes banner-1 {
+
+    1%, 33% {
+        background-image: url(../Assets/Cerdo/cerdo.jpg);
     }
-    25%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+    34%, 66% {
+        background-image: url(../Assets/Carousel/carousel2.jpg);
     }
-    
-    26%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
-    }
-    50%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
-    }
-    
-    51%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
-    }
-    100%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
+    67%, 100% {
+        background-image: url(../Assets/Otros/aceites.jpeg);
     }
 
-}@keyframes banner-2{
-    0%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
-    }
-    25%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
-    }
-    
-    26%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
-    }
-    50%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
-    }
-    
-    51%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
-    }
-    100%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
-    }
+}
 
-}@keyframes banner-1{
-    0%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+.banner-2 {
+    width: 100%;
+    height: 250px;
+    animation: banner-2 14s infinite linear;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+@keyframes banner-2 {
+    1%, 33% {
+        background-image: url(../Assets/Vacunos/vacunos2.jpeg);
     }
-    25%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/work.jpg?raw=true");
+    34%, 66% {
+        background-image: url(../Assets/Carousel/carousel2.jpg);
     }
-    
-    26%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
-    }
-    50%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/growth.jpg?raw=true");
-    }
-    
-    51%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
-    }
-    100%{
-        background-image: url("https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/store.jpg?raw=true");
+    67%, 100% {
+        background-image: url(../Assets/Aves/pollo.jpg);
     }
 }
+
+.banner-3 {
+    width: 100%;
+    height: 250px;
+    animation: banner-3 10s infinite linear;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+@keyframes banner-3 {
+    1%, 33% {
+        background-image: url(../Assets/Cerdo/cerdo2.jpg);
+    }
+    34%, 66% {
+        background-image: url(../Assets/Carousel/carousel2.jpg);
+    }
+    67%, 100% {
+        background-image: url(../Assets/Carousel/carousel3.jpg);
+    }
+}
+
+.banner-4 {
+    width: 100%;
+    height: 250px;
+    animation: banner-4 11s infinite linear;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+@keyframes banner-4 {
+    1%, 33% {
+        background-image: url(../Assets/Otros/huevos.jpg);
+    }
+    34%, 66% {
+        background-image: url(../Assets/Carousel/carousel2.jpg);
+    }
+    67%, 100% {
+        background-image: url(../Assets/Carousel/carousel3.jpg);
+    }
+}
+
+.banner-5 {
+    width: 100%;
+    height: 250px;
+    animation: banner-5 15s infinite linear;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+@keyframes banner-5 {
+    1%, 33% {
+        background-image: url(../Assets/Carousel/carousel1.jpg);
+    }
+    34%, 66% {
+        background-image: url(../Assets/Otros/aceites.jpeg);
+    }
+    67%, 100% {
+        background-image: url(../Assets/Carousel/carousel3.jpg);
+    }
+}
+
+.banner-6 {
+    width: 100%;
+    height: 250px;
+    animation: banner-6 16s infinite linear;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+@keyframes banner-6 {
+    1%, 33% {
+        background-image: url(../Assets/Carousel/carousel1.jpg);
+    }
+    34%, 66% {
+        background-image: url(../Assets/Carousel/carousel2.jpg);
+    }
+    67%, 100% {
+        background-image: url(../Assets/Carousel/carousel3.jpg);
+    }
+}
+/* Banner ends */
