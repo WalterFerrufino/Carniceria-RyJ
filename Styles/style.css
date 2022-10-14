@@ -73,7 +73,7 @@ nav ul li a {
     border-radius: 3px;
 }
 
-a.active, a:hover {
+nav ul li a.active, nav ul li a:hover, .footer-menu-item:hover {
     transition: 0.5s;
     background-color: var(--dark-blue);
     color: var(--very-light-blue);
@@ -179,6 +179,11 @@ footer {
     flex-wrap: wrap;
 }
 
+.footer-menu-container span {
+    margin: 1rem 3.5rem;
+    opacity: 0.9;
+}
+
 .footer-menu-container a {
     color: var(--very-light-blue);
     list-style-type: none;
@@ -187,12 +192,27 @@ footer {
 
 .footer-menu-item {
     margin: 1rem 3.5rem;
+    padding: .2rem .8rem;
     opacity: 0.9;
+    border-radius: 3px;
 }
 
-footer ul li a:hover {
+.wa-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wa-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 0 3.5rem;
+    padding: 0.2rem 0.8rem;
+}
+
+.wa-icon img:hover {
+    transform: scale(1.2);
     transition: 0.5s;
-    color: var(--very-light-blue);
 }
 
 @media (max-width: 952px) {
@@ -239,7 +259,7 @@ footer ul li a:hover {
     }
 }
 
-@media (max-height: 368px) {
+@media (max-width: 368px) {
     nav {
         margin-bottom: 5rem;
         display: flex;
@@ -254,6 +274,10 @@ footer ul li a:hover {
         flex-wrap: wrap;
         align-items: center;
         margin-top: 0rem;
+    }
+    .footer-menu-container span, .footer-menu-container a {
+        width: 100%;
+        text-align: center;
     }
 }
 
